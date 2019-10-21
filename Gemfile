@@ -40,6 +40,8 @@ group :development, :test do
   gem 'launchy'
   gem 'rspec-rails'
   gem 'factory_bot_rails'
+  gem 'simplecov'
+  gem 'capybara'
 end
 
 group :development do
