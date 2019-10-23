@@ -1,0 +1,19 @@
+<h1><%= facade.username %>'s Profile</h1>
+<h3>Average Rating: <%= facade.average_rating %></h3>
+
+<section class='Reviews'>
+  <table>
+    <tr>
+      <th>Reviewer</th>
+      <th>Rating</th>
+      <th>Content</th>
+    </tr>
+    <% facade.reviews.each do |review| %>
+      <tr>
+        <td>review.reviewer.username</td>
+        <td>review.rating</td>
+        <td>review.content</td>
+      </tr>
+    <% end %>
+  </table>
+</section>

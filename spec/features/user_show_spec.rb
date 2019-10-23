@@ -12,13 +12,13 @@ describe 'User show page' do
   end
   it 'shows info about that user' do
 
-    expect(page).to have_content("Username: #{@user.username}")
+    expect(page).to have_content("#{@user.username}'s Profile'")
     expect(page).to have_content('Average Rating: 5')
     expect(page).to have_css('.reviews')
 
     within(first('.reviews')) do
-      expect(page).to have_content("Reviewer: #{@user2.username}")
-      expect(page).to have_content("Rating: #{@review.rating}")
+      expect(page).to have_content(@user2.username)
+      expect(page).to have_content(@review.rating)
       expect(page).to have_content(@review.content)
     end
   end
@@ -33,8 +33,8 @@ describe 'User show page' do
     end
 
     within(first('.reviews')) do
-      expect(page).to have_content("Reviewer: #{@user2.username}")
-      expect(page).to have_content('Rating: 3')
+      expect(page).to have_content(@user2.username)
+      expect(page).to have_content(3)
       expect(page).to have_content('This guy rocks!')
     end
 
