@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  get '/', to: 'welcome#index'
+  devise_for :users, skip: [:session]
+  as :user do
+    get 'login', to: 'devise/sessions#new'
+    get 'register', to: 'devise/registrations#new'
+    get 'logout', to: 'devise/sessions#destroy'
+    post 'users', to: 'devise/sessions#create'
+  end
+
+  root to: 'welcome#index'
+  get "/profile", to: "users/dashboard#index"
 end

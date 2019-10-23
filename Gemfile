@@ -29,6 +29,8 @@ gem 'faraday'
 gem 'bootstrap-sass', '>= 3.4.1'
 gem 'figaro'
 gem 'jquery-rails'
+gem 'devise'
+gem 'simple_form'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
