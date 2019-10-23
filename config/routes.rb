@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     post 'users', to: 'devise/sessions#create'
   end
 
-  resources :users, only: [:show]
+  get '/users/:username', to: 'users#show'
 
   root to: 'welcome#index'
   get "/profile", to: "users/dashboard#index"
