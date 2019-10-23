@@ -8,7 +8,7 @@ describe 'User show page' do
 
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user_2)
 
-    visit "/users/#{user.username}"
+    visit "/users/#{@user.username}"
   end
   it 'shows info about that user' do
 
