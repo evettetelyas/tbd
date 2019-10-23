@@ -12,7 +12,7 @@ describe 'User show page' do
   end
   it 'shows info about that user' do
 
-    expect(page).to have_content("#{@user.username}'s Profile'")
+    expect(page).to have_content("#{@user.username}'s Profile")
     expect(page).to have_content('Average Rating: 5')
     expect(page).to have_css('.reviews')
 
