@@ -28,6 +28,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'faraday'
 gem 'bootstrap-sass', '>= 3.4.1'
 gem 'figaro'
+gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 gem 'jquery-rails'
 gem 'devise'
 gem 'simple_form'
