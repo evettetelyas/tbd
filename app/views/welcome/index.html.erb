@@ -1,0 +1,7 @@
+<center>
+	<%= image_tag("ttlogo.png", class: "welcome-logo") %><br><br><br><br>
+	<% if !current_user %>
+		<%= link_to "Register", register_path, class: "home-button", method: :get %>
+		<%= link_to "How it Works", "/", class: "home-button", method: :get %>
+	<% end %>
+</center>
