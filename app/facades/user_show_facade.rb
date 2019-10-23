@@ -6,6 +6,10 @@ class UserShowFacade
     @user = user
   end
 
+  def new_review
+    Review.new
+  end
+
   def username
     user.username
   end

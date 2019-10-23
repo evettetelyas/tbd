@@ -6,10 +6,15 @@ describe 'User show page' do
     @user2 = create(:user)
     @review = create(:review, user: @user, reviewer: @user2, rating: 5)
 
-    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user_2)
+    visit login_path
+
+    fill_in 'Email', with: @user2.email
+    fill_in 'Password', with: @user2.password
+    click_on 'Log in'
 
     visit "/users/#{@user.username}"
   end
+
   it 'shows info about that user' do
 
     expect(page).to have_content("#{@user.username}'s Profile")
@@ -27,9 +32,9 @@ describe 'User show page' do
     expect(page).to have_css('.new-review')
 
     within('.new-review') do
-      select 3, from: :rating
-      fill_in :content, with: 'This guy rocks!'
-      click_on 'Submit'
+      select 3, from: 'Rating'
+      fill_in 'Content', with: 'This guy rocks!'
+      click_on 'Create Review'
     end
 
     within(first('.reviews')) do
