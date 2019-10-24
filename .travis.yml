@@ -2,5 +2,11 @@ language: ruby
 rvm:
   - 2.6.3
 
+services:
+  - postgresql
+
 before_install:
-  - gem install rake
+  - bundle install
+  - psql -c 'create database travis_ci_test;' -U postgres
+  - RAILS_ENV=test rails db:migrate
+  - rake db:migrate

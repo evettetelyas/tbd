@@ -10,7 +10,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5'
+# gem 'sass-rails', '~> 5'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 4.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -28,6 +28,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'faraday'
 gem 'bootstrap-sass', '>= 3.4.1'
 gem 'figaro'
+gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 gem 'jquery-rails'
 gem 'devise'
 gem 'simple_form'
