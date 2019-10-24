@@ -1,0 +1,41 @@
+<nav class="navbar navbar-dark primary-black">
+  <%= link_to "TicketTalk", root_path, class: "navbar-brand lobster" %>
+  <% if current_user %>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  <% end %>
+  <button class="navbar-toggler third-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent22"
+    aria-controls="navbarSupportedContent22" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="animated-icon3"><span></span><span></span><span></span></div>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent22">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <% if current_user %>
+      <li class="nav-item">
+          <%= link_to "How it Works", "/", class: "nav-link" %>
+        </li>
+      <li class="nav-item">
+          <%= link_to "Events", "#", class: "nav-link" %>
+        </li>
+      <li class="nav-item">
+          <%= link_to "My Profile", profile_path, class: "nav-link" %>
+        </li>
+      <li class="nav-item">
+          <%= link_to "Log Out", logout_path, class: "nav-link" %>
+        </li>
+      <% else %>
+      <li class="nav-item">
+        <%= link_to "Log In", login_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+          <%= link_to "Register", register_path, class: "nav-link" %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</nav>
