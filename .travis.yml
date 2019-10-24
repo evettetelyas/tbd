@@ -5,7 +5,7 @@ rvm:
 before_install:
   - bundle install
   - gem install rake
-  - rake assets:precompile
   - bundle exec rake db:drop RAILS_ENV=test
   - bundle exec rake db:create RAILS_ENV=test
   - bundle exec rake db:schema:load RAILS_ENV=test
+  - rake assets:precompile
