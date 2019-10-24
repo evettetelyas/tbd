@@ -7,6 +7,6 @@ services:
 
 before_install:
   - bundle install
-  - gem install rake
   - psql -c 'create database travis_ci_test;' -U postgres
   - rake db:migrate
+  - rake assets:precompile
