@@ -8,4 +8,5 @@ services:
 before_install:
   - bundle install
   - psql -c 'create database travis_ci_test;' -U postgres
+  - RAILS_ENV=test rails db:migrate
   - rake db:migrate
