@@ -4,3 +4,4 @@ rvm:
 
 before_install:
   - gem install rake
+  - bundle exec rails db:reset db:setup db:migrate RAILS_ENV=test
