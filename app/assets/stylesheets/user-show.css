@@ -1,0 +1,69 @@
+
+.profile-summary {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.review-section {
+  width: 100%;
+  margin: 0 auto;
+  display: inline;
+  height: 800px;
+}
+
+.review-table {
+  width: 100%;
+  height: 300px;
+  overflow: scroll;
+}
+
+.reviews {
+  display: inline-block;
+  width: 40%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 1px solid #009CDE;
+  background-color: #FFFFFF;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.reviews td, .reviews th {
+  border: 1px solid #262626;
+  padding: 3px 2px;
+}
+
+.reviews tbody td {
+  font-size: 13px;
+}
+
+.reviews tr:nth-child(even) {
+  background: #CBDFEA;
+}
+
+.reviews thead {
+  background: #009CDE;
+  border-bottom: 2px solid #444444;
+}
+
+.reviews thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 2px solid #D00070;
+}
+.reviews thead th:first-child {
+  border-left: none;
+}
+
+.new-review {
+  float: right;
+  width: 30%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 5px solid #B7C9D3;
+  border-radius: 10px;
+}
