@@ -3,8 +3,8 @@ rvm:
   - 2.6.3
 
 before_install:
-  - rake assets:precompile
   - gem install rake
+  - rake assets:precompile
   - bundle exec rake db:drop RAILS_ENV=test
   - bundle exec rake db:create RAILS_ENV=test
   - bundle exec rake db:schema:load RAILS_ENV=test
