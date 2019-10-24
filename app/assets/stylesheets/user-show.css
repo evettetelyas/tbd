@@ -1,16 +1,23 @@
 
 .profile-summary {
-  width: 100%;
-  justify-content: center;
+  width: 30%;
+  background: -webkit-linear-gradient(top, #6db3f2 0%,#ccd3dd 100%);
+  margin: auto;
   text-align: center;
   margin-bottom: 100px;
+  border-radius: 25px;
+  border-style: groove;
+  border-color: #009cde;
+  border-width: 3px;
+  padding-bottom: 30px;
+  color: #262626;
+  text-shadow: 4px 2px 2px rgba(74, 152, 202, 0.59);
 }
 
 .review-section {
   width: 100%;
   margin: 0 auto;
   display: inline;
-  height: 800px;
 }
 
 .review-table {
@@ -24,10 +31,15 @@
   width: 40%;
   margin-left: 5%;
   margin-right: 5%;
-  border: 1px solid #009CDE;
-  background-color: #FFFFFF;
+  border-radius: 25px;
+  border-style: groove;
+  border-color: #009cde;
+  border-width: 3px;
   text-align: center;
   border-collapse: collapse;
+  overflow: scroll;
+  height: 300px;
+
 }
 
 .reviews td, .reviews th {
@@ -64,6 +76,11 @@
   width: 30%;
   margin-left: 5%;
   margin-right: 5%;
-  border: 5px solid #B7C9D3;
-  border-radius: 10px;
+  border-radius: 25px;
+  border-style: groove;
+  border-color: #009cde;
+  border-width: 3px;
+  padding: 10px;
+  height: 300px;
+  background: -webkit-linear-gradient(top, #6db3f2 0%,#ccd3dd 100%);
 }
