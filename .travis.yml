@@ -9,4 +9,3 @@ before_install:
   - bundle install
   - psql -c 'create database travis_ci_test;' -U postgres
   - rake db:migrate
-  - bundle exec rake assets:precompile
