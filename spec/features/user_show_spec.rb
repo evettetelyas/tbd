@@ -3,7 +3,7 @@ require 'rails_helper'
 describe 'User show page' do
   before :each do
     @user = create(:user)
-    @user2 = create(:user)
+    @user2 = create(:user, password: 'password')
     @review = create(:review, user: @user, reviewer: @user2, rating: 5)
 
     visit login_path
