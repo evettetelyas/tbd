@@ -7,7 +7,7 @@ class Event
 		@purchase_url = data[:purchase_url]
 		@image = data[:image]
 		@on_sale = data[:on_sale]
-		@date = data[:date]
+		@date = data[:date].to_datetime.strftime('%D')
 		@price_min = data[:price_min]
 		@price_max = data[:price_max]
 		@currency = data[:currency]
