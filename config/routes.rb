@@ -12,4 +12,6 @@ Rails.application.routes.draw do
 
   root to: 'welcome#index'
   get "/profile", to: "users/dashboard#index"
+
+  get '/search', to: 'users/search#index'
 end
