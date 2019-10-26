@@ -14,4 +14,7 @@ Rails.application.routes.draw do
   get "/profile", to: "users/dashboard#index"
 
   get '/search', to: 'users/search#index'
+  
+  resources :room_messages
+  resources :rooms
 end
