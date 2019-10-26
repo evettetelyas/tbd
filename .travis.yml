@@ -14,3 +14,6 @@ deploy:
   app: tickettalk
   on:
     repo: evettetelyas/tbd
+
+  run:
+    - "rake db:migrate"
