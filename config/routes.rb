@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   end
 
   get '/users/:username', to: 'users#show', as: :user_show
+  get '/events', to: 'users/events#index', as: :my_events
   post '/users/:username/reviews', to: 'users/reviews#create', as: :new_review
 
   root to: 'welcome#index'
