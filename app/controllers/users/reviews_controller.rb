@@ -28,5 +28,3 @@ class Users::ReviewsController < ApplicationController
     review_params
   end
 end
-
-result = binaryCondition ? valueReturnedIfTrue : valueReturnedIfFalse;
