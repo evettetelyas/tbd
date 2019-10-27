@@ -1,7 +1,8 @@
 import "core-js";
 import "regenerator-runtime/runtime";
 import 'bootstrap';
-// import './stylesheets/application.css';
+import './stylesheets/application';
+import '/app/assets/stylesheets';
 
 import 'jquery';
 // import Rails from 'rails-ujs';
