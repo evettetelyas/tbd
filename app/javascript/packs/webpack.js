@@ -2,7 +2,7 @@ import "core-js";
 import 'jquery';
 import "regenerator-runtime/runtime";
 import 'bootstrap';
-import '../stylesheets/style'
+import '../stylesheets/style';
 
 //= require rails-ujs
 //= require activestorage
