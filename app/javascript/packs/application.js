@@ -1,7 +1,7 @@
 import "core-js";
 import "regenerator-runtime/runtime";
 import 'bootstrap';
-import './stylesheets/application';
+import '/app/javascript/stylesheets/application';
 import '/app/assets/stylesheets';
 
 import 'jquery';
