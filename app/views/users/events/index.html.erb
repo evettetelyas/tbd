@@ -1,0 +1,6 @@
+<h3>Archive of My Events</h3>
+
+<% facade.archive.each do |event| %>
+  <%= event.name %> <%= event.date %>
+  <%= link_to 'View Archived Chat', rooms_path(event) %>
+<% end %>
