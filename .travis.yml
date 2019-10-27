@@ -32,7 +32,6 @@ install:
   - yarn install
 
 script:
-  - yarn test
   - bundle exec rspec spec
 
 after_success:
