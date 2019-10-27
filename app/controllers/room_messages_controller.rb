@@ -6,8 +6,7 @@ class RoomMessagesController < ApplicationController
 										   room: @room,
 										   message: params.dig(:room_message, :message)
 	  
-		# RoomChannel.broadcast_to @room, @room_message
-		redirect_to "/rooms/#{@room.id}"
+		RoomChannel.broadcast_to @room, @room_message
 	  end
   
 	protected
