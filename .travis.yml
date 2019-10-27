@@ -27,7 +27,6 @@ cache:
   yarn: true
 
 install:
-  # - brew install yarn
   - yarn add node@10
   - yarn install
 
@@ -37,20 +36,3 @@ script:
 after_success:
   - ./bin/webpack
   - bundle exec rails webpacker:compile
-
-deploy:
-  provider: heroku:git
-  api_key: dc4906c0-d2cb-4728-a305-73cdd873d503
-  run:
-    rake db: migrate
-
-# deploy:
-#   provider: heroku
-#   api_key:
-#     secure: iCqmTp8NNzWrfN5DJJ2/BHplRBfgmGE2JI0AFRblQk+zV7k7sQAVG4p08pUdi89sIDMUqX5CHBd0uAAY0Ychv00/sWmFV/dOpH2L48CpMrVNxE8rdgIzulYrouX/G2/2kne16fLPVvV3vxw/jEqgrM0Nx8ee0hqD9iMMRRj/ocDErwg10bXCEjSVbPxQ2Zz0xIKJLHjvyGovkUH5n5dnRpQpwigMU1hEbxiubREVLz0VOXr4HSW2fmXx2NKcT1YexqYBqFRv1H2wWEQmLpzB/QdtTMokO6sNVCOXNOuspsfzhEZoSYAWiNal4kWAwZ2/Jn2eoncuV9/Ks3tCeEk/NE7+w+Sx9w2vI88AvJjMaLaBBgiNmAUsSYzKURBazX5Tf7HrqCCNJAKZ+G+1xe89j2lCEMN/pm3kiSQjnjLIwbdbn4CyEIEBXV+iLPye77jPLGst3ecWeBVbFcvzO+7zqW3JgfJhpbQKuV+eNkpb1yuOP9weBFrnmR1ZEb98yFfRzGQNnB5rQOV5Eo7AyqsVtnvcUyaUPTk6CiI7JJ3GEj5pgz8tmEFeD+NuL8VrN6qjR16j2J2Hrt1jvBWkK4EFvTeFTfF9eKXbUeQWwBb+cSOOQZm5s7vMfnexcIHV86PdfF3wFHV03f1Gh0xlZusaai7g7/uFu+LRD8Zr2sRl+UI=
-#   app: tickettalk
-#   on:
-#     repo: evettetelyas/tbd
-#
-#   run:
-#     - "rake db:migrate"
