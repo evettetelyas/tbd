@@ -2,6 +2,7 @@ import "core-js";
 import 'jquery';
 import "regenerator-runtime/runtime";
 import 'bootstrap';
+import './stylesheets/application'
 
 // // import Rails from 'rails-ujs';
 // // import Turbolinks from 'turbolinks';
