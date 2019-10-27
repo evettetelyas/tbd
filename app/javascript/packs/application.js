@@ -1,4 +1,4 @@
-import "core-js/stable";
+import "core-js";
 import "regenerator-runtime/runtime";
 import 'bootstrap';
 import 'stylesheets/application.css';
