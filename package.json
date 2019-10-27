@@ -7,9 +7,11 @@
     "@rails/ujs": "^6.0.0-alpha",
     "@rails/webpacker": "^4.0.7",
     "bootstrap": "^4.3.1",
+    "css-loader": "^3.2.0",
     "devise": "^1.0.9",
     "jQuery": "^1.7.4",
     "popper": "^1.0.1",
+    "style-loader": "^1.0.0",
     "turbolinks": "^5.2.0",
     "webpacker": "^4.6.0"
   },
