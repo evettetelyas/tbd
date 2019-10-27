@@ -13,6 +13,7 @@ before_install:
 before_script:
   - bundle exec RAILS_ENV=test rails db:migrate
   - bundle exec rake db:migrate
+  - bin/yarn
 
 cache:
   bundler: true
@@ -20,13 +21,16 @@ cache:
     - node_modules
   yarn: true
 
-install:
-  - nvm install node
-  - node -v
-  - npm i -g yarn
-  - yarn
+# install:
+#   - nvm install node
+#   - node -v
+#   - npm i -g yarn
+#   - yarn
 
 script:
+  - bin/rails test
+  - bin/yarn test
+  - ./bin/webpack
   - bundle exec rails webpacker:compile
 
 deploy:
