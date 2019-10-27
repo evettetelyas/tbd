@@ -3,6 +3,11 @@ language: ruby
 rvm:
   - 2.6.3
 
+addons:
+  homebrew:
+    packages:
+      - yarn
+
 services:
   - postgresql
 
@@ -22,9 +27,8 @@ cache:
   yarn: true
 
 install:
-  - nvm install node
-  - node -v
-  - npm i -g yarn
+  # - brew install yarn
+  - yarn add node@10
   - yarn install
 
 script:
