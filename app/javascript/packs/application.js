@@ -1,10 +1,8 @@
-// import "core-js";
-// import 'jquery';
-// import "regenerator-runtime/runtime";
-// import 'bootstrap';
-// import 'stylesheets/application';
-// // import '/app/assets/stylesheets';
-//
+import "core-js";
+import 'jquery';
+import "regenerator-runtime/runtime";
+import 'bootstrap';
+
 // // import Rails from 'rails-ujs';
 // // import Turbolinks from 'turbolinks';
 //
@@ -16,6 +14,22 @@
 // require("@rails/activestorage").start();
 // Rails.start();
 // Turbolinks.start();
+
+$(document).ready(function () {
+
+  $('.first-button').on('click', function () {
+
+    $('.animated-icon1').toggleClass('open');
+  });
+  $('.second-button').on('click', function () {
+
+    $('.animated-icon2').toggleClass('open');
+  });
+  $('.third-button').on('click', function () {
+
+    $('.animated-icon3').toggleClass('open');
+  });
+});
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
