@@ -1,14 +1,32 @@
 {
+  "application.css": "/packs/css/application-43d21262.css",
+  "application.css.map": "/packs/css/application-43d21262.css.map",
+  "application.js": "/packs/js/application-6656b6bc0f1e09eeec4e.js",
+  "application.js.map": "/packs/js/application-6656b6bc0f1e09eeec4e.js.map",
   "entrypoints": {
-    "webpack": {
+    "application": {
+      "css": [
+        "/packs/css/application-43d21262.css"
+      ],
       "js": [
-        "/packs/js/webpack-2292fd3d84ee381dc18d.js"
+        "/packs/js/application-6656b6bc0f1e09eeec4e.js"
+      ],
+      "css.map": [
+        "/packs/css/application-43d21262.css.map"
       ],
       "js.map": [
-        "/packs/js/webpack-2292fd3d84ee381dc18d.js.map"
+        "/packs/js/application-6656b6bc0f1e09eeec4e.js.map"
+      ]
+    },
+    "hello_erb": {
+      "js": [
+        "/packs/js/hello_erb-92962b35bb61c991d728.js"
+      ],
+      "js.map": [
+        "/packs/js/hello_erb-92962b35bb61c991d728.js.map"
       ]
     }
   },
-  "webpack.js": "/packs/js/webpack-2292fd3d84ee381dc18d.js",
-  "webpack.js.map": "/packs/js/webpack-2292fd3d84ee381dc18d.js.map"
+  "hello_erb.js": "/packs/js/hello_erb-92962b35bb61c991d728.js",
+  "hello_erb.js.map": "/packs/js/hello_erb-92962b35bb61c991d728.js.map"
 }

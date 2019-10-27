@@ -11,7 +11,6 @@
     "@rails/webpacker": "^4.0.7",
     "bootstrap": "^4.3.1",
     "core-js": "^3.3.4",
-    "css-loader": "^3.2.0",
     "devise": "^1.0.9",
     "eslint": "^6.6.0",
     "eslint-plugin-react": "^7.16.0",
