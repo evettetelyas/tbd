@@ -12,6 +12,9 @@ require("turbolinks").start();
 require("@rails/activestorage").start();
 require('core-js');
 
+// Rails.start()
+// Turbolinks.start()
+
 require("channels");
 
 
