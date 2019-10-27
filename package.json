@@ -7,7 +7,7 @@
     "@rails/ujs": "^6.0.0-alpha",
     "@rails/webpacker": "^4.0.7",
     "bootstrap": "^4.3.1",
-    "core-js": "2.5.7",
+    "core-js": "2.6.5",
     "css-loader": "^3.2.0",
     "devise": "^1.0.9",
     "eslint": "^6.6.0",
