@@ -5,11 +5,32 @@
 		</div>
 	  
 		<div class="col">
-				<div class="chat" data-channel-subscribe="room" data-room-id="<%= @room.id %>">
-				  <% @room_messages.each do |room_message| %>
-					<%= room_message %>
-				  <% end %>
-				</div>
+				<div class="col">
+						<div class="chat" data-channel-subscribe="room" data-room-id="<%= @room.id %>">
+							<% @room_messages.each do |room_message| %>
+							<div class="chat-message-container">
+							  <div class="row no-gutters">
+								<div class="col-auto text-center">
+								  <a class="username-chat" href="/users/<%= room_message.user.username %>" data-role="username"><%= room_message.user.username %></a>
+								</div>
+					
+								<div class="col">
+								  <div class="message-content">
+									<p class="mb-1">
+										<%= room_message.message %>
+									</p>
+					
+									<div class="text-right">
+									  <small>
+										<%= room_message.created_at %>
+									  </small>
+									</div>
+								  </div>
+								</div>
+							  </div>
+							</div>
+						  <% end %>
+					  </div>
 			
 				<%= simple_form_for @room_message, remote: true do |form| %>
 				  <div class="input-group mb-3">
