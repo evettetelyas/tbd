@@ -1,13 +1,34 @@
 language: ruby
+
 rvm:
-- 2.6.3
+  - 2.6.3
+
 services:
-- postgresql
+  - postgresql
+
 before_install:
-- bundle install
-- psql -c 'create database travis_ci_test;' -U postgres
-- RAILS_ENV=test rails db:migrate
-- rake db:migrate
+  - bundle install
+  - psql -c 'create database travis_ci_test;' -U postgres
+
+before_script:
+  - bundle exec RAILS_ENV=test rails db:migrate
+  - bundle exec rake db:migrate
+
+cache:
+  bundler: true
+  directories:
+    - node_modules
+  yarn: true
+
+install:
+  - nvm install node
+  - node -v
+  - npm i -g yarn
+  - yarn
+
+script:
+  - bundle exec rails webpacker:compile
+
 deploy:
   provider: heroku
   api_key:
