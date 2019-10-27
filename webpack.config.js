@@ -1,5 +1,5 @@
 module.exports = {
-  mode: 'development'
+  mode: 'development',
 };
 
-{ test: /\.css$/, loader: "style-loader!css-loader" }
+{ loader: "style-loader!css-loader" }

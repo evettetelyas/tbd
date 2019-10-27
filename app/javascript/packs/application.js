@@ -7,9 +7,11 @@
 // require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
-// import '../../assets/stylesheets/application.css'
+import 'stylesheets/application'
 // import 'jquery'
 import 'bootstrap'
+import "core-js/stable";
+import "regenerator-runtime/runtime";
 // import Rails from 'rails-ujs'
 // import Turbolinks from 'turbolinks'
 
