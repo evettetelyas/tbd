@@ -1,6 +1,9 @@
 {
   "name": "ticket_pastor",
   "private": true,
+  "setupFiles": [
+      "<rootDir>/node_modules/core-js"
+    ]
   "dependencies": {
     "@rails/actioncable": "^6.0.0-alpha",
     "@rails/activestorage": "^6.0.0-alpha",

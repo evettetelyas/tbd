@@ -9,8 +9,9 @@ import 'stylesheets/application.css';
 
 // require("@rails/ujs").start()
 // require("turbolinks").start()
-require("@rails/activestorage").start()
-require("channels")
+// require("@rails/activestorage").start();
+require("channels");
+// require('core-js');
 // import 'jquery'
 // import Rails from 'rails-ujs'
 // import Turbolinks from 'turbolinks'
