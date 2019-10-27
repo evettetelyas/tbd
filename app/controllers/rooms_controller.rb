@@ -4,6 +4,8 @@ class RoomsController < ApplicationController
 
 	def show
 		@room = Room.find(params[:id])
+		binding.pry
+		@event = Event.find_by(tm_id: @room.tm_id)
 		@room_message = RoomMessage.new room: @room
 		@room_messages = @room.room_messages.includes(:user)
 	end

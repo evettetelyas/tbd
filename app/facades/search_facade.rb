@@ -15,7 +15,7 @@ class SearchFacade
 
 	def events
 		event_data[:events].map do |event|
-			Event.new(event)
+			Event.create(event)
 		end
 	end
 end
