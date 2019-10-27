@@ -16,7 +16,7 @@ class Event < ApplicationRecord
     #     @venue = data[:venue]
     # end
 
-    # def date
-    #     @raw_date.to_datetime.strftime('%D') if @raw_date
-    # end
+    def formatted_date
+        date.to_datetime.strftime('%D') if date
+    end
 end
