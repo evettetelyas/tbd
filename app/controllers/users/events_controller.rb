@@ -1,5 +1,7 @@
 class Users::EventsController < ApplicationController
   def index
-
-  end 
+    render locals: {
+     facade: MyEventsFacade.new(current_user)
+    }
+  end
 end
