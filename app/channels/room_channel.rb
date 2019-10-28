@@ -3,4 +3,4 @@ class RoomChannel < ApplicationCable::Channel
 	  room = Room.find params[:room]
 	  stream_for room
 	end
-  end
+end
